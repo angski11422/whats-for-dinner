@@ -1,9 +1,10 @@
 import React from 'react';
 
 function Recipe() {
+
     return (
         <div>
-            <h1>Recipe Details Here</h1>
+            <h3>Recipe Details</h3>
         </div>
     );
 }

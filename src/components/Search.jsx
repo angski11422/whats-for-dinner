@@ -2,14 +2,18 @@ import React, { useEffect, useState } from 'react';
 import SearchRecipe from './SearchRecipe'
 
 function Search() {
-    const [searchRecipe, setSearchRecipe] = useState([])
+    const [searchRecipe, setSearchRecipe] = useState("")
     const [search, setSearch] = useState("")
  
     useEffect(() => {
-        fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
+        fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
         .then((resp) => resp.json())
         .then(data => setSearchRecipe(data))
         }, [])
+    
+    if (!searchRecipe){
+        return <h3>Loading...</h3>
+    }
     
     return (
         <div className=" bg-gray-200">
@@ -21,7 +25,7 @@ function Search() {
                     </div>
                 </div>  
                 <div>
-                    <SearchRecipe />
+                    <SearchRecipe searchRecipe={searchRecipe}/>
                 </div>     
             </div>
         </div>

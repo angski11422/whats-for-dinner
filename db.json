@@ -1,11 +1,27 @@
 {
-    "meals": [
+    "recipes": [
         {
             "id": "1",
-            "dishNames": "spaghetti",
+            "dishName": "spaghetti",
+            "cuisine": "italian"
+        },
+        {
+            "id": "2",
+            "dishName": "cheeseburger",
             "cuisine": "american"
+        },
+        {
+            "id": "3",
+            "dishName": "pad thai",
+            "cuisine": "thai"
+        },
+        {
+            "id": "4",
+            "dishName": "butter chicken",
+            "cuisine": "indian"
         }
-
     ]
 }
+
+
     

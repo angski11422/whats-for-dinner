@@ -15,7 +15,7 @@ function Home() {
     }
 
     return (
-        <div>
+        <div className=" bg-gray-200">
             <RandomRecipe randomRecipe={randomRecipe}/>
         </div>
     );
