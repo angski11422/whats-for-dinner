@@ -4,7 +4,7 @@ function RandomRecipe({randomRecipe}) {
 
     const ranRecipe = randomRecipe.meals[0]
 
-    function handleClick() {
+    function handleViewVideo() {
         window.open(ranRecipe.strYoutube, '_blank');
     }
 
@@ -13,10 +13,12 @@ function RandomRecipe({randomRecipe}) {
             <img 
                 src={ranRecipe.strMealThumb} 
                 alt={ranRecipe.strMeal}
-                onClick={handleClick}
+                onClick={handleViewVideo}
             />
             <h1>{ranRecipe.strMeal}</h1>
+            
             <ul>
+                {/*for loop instead of each list*/}
                 <li>{ranRecipe.strMeasure1} {ranRecipe.strIngredient1}</li>
                 <li>{ranRecipe.strMeasure2} {ranRecipe.strIngredient2}</li>
                 <li>{ranRecipe.strMeasure3} {ranRecipe.strIngredient3}</li>
