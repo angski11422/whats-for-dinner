@@ -26,7 +26,7 @@ function RecipeForm() {
                         <option value="other">Other</option>
                     </select>
                 </label>
-                <br></br>
+                <p>Ingredients: input here</p>
                 <button type="submit">Add</button>
             </form>
         </div>

@@ -1,7 +1,6 @@
 import React  from 'react';
 import { Link } from 'react-router-dom'
 
-
 function NavBar() {
     return (
         <nav className="flex px-4 border-b md:shadow-lg items-center relative">
