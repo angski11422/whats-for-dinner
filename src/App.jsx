@@ -5,6 +5,7 @@ import Home from './components/Home'
 import MyRecipes from './components/MyRecipes';
 import Search from './components/Search';
 import Recipe from './components/Recipe';
+import RecipeForm from './components/RecipeForm';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/myrecipes" element={<MyRecipes />} />
         <Route path="/myrecipes/:recipeId"  element={<Recipe />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/myrecipes/recipeform" element={<RecipeForm />} />
       </Routes>
     </div>
   )

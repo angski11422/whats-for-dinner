@@ -15,10 +15,9 @@ function RandomRecipe({randomRecipe}) {
                 alt={ranRecipe.strMeal}
                 onClick={handleViewVideo}
             />
-            <h1>{ranRecipe.strMeal}</h1>
+            <h1 className="font-bold">{ranRecipe.strMeal}</h1>
             
-            <ul>
-                {/*for loop instead of each list*/}
+            <ul className="marker:text-white text-black list-inside list-disc">
                 <li>{ranRecipe.strMeasure1} {ranRecipe.strIngredient1}</li>
                 <li>{ranRecipe.strMeasure2} {ranRecipe.strIngredient2}</li>
                 <li>{ranRecipe.strMeasure3} {ranRecipe.strIngredient3}</li>
@@ -40,7 +39,7 @@ function RandomRecipe({randomRecipe}) {
                 <li>{ranRecipe.strMeasure19} {ranRecipe.strIngredient19}</li>
                 <li>{ranRecipe.strMeasure20} {ranRecipe.strIngredient20}</li>
             </ul>
-            <p>{ranRecipe.strInstructions}</p>
+            <p><b>Directions:</b> {ranRecipe.strInstructions}</p>
             <div>
                 <button className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Add to Favorites</button>
             </div>

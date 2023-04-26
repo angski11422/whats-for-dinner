@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 
 function Recipe() {
     const {recipeId} = useParams();
-    console.log(recipeId)
 
 
     return (
