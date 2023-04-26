@@ -27,7 +27,7 @@ function RecipeForm() {
                     </select>
                 </label>
                 <p>Ingredients: input here</p>
-                <button type="submit">Add</button>
+                <button type="submit"className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" >Add</button>
             </form>
         </div>
     );

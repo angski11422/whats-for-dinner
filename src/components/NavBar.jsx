@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function NavBar() {
     return (
-        <nav className="flex px-4 border-b md:shadow-lg items-center relative">
+        <nav className="flex px-4 border-b md:shadow-lg items-center fixed top-0 left-0 right-0 bg-indigo-400">
             <div className="text-lg font-bold md:py-0 py-4">
                 What's for Dinner Tonight?
             </div>

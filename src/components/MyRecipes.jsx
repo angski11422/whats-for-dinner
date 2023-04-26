@@ -16,13 +16,13 @@ function MyRecipes() {
     )
 
     return (
-        <div className=" bg-gray-200">
+        <div>
             <h1>My Recipes List</h1>  
             <div>
                 {recipeList}
-                {/* <div>
+                <div>
                     <RecipeForm />
-                </div> */}
+                </div>
             </div>
         </div>
     );

@@ -10,7 +10,7 @@ import Recipe from './components/Recipe';
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-400">
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
