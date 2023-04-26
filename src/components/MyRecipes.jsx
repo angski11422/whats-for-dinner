@@ -12,7 +12,7 @@ function MyRecipes() {
     }, [])
 
     const recipeList = recipes.map((recipe) =>
-        <RecipeList key={recipe.id} recipe={recipe} /> 
+        <RecipeList key={recipe.idMeal} recipe={recipe} /> 
     )
 
     return (

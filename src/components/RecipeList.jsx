@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Recipe from './Recipe'
 
 function RecipeList({recipe}) {
 
     return (
         <div>
-            {recipe.dishName}
+            <Link to={`/myrecipes/${recipe.idMeal}`}>
+                {recipe.strMeal}
+            </Link> 
         </div>
     );
 }

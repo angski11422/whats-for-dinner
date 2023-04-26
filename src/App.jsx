@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import MyRecipes from './components/MyRecipes';
 import Search from './components/Search';
+import Recipe from './components/Recipe';
 
 
 
@@ -13,7 +14,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/myrecipes" element={<MyRecipes />} />
+        <Route exact path="/myrecipes" element={<MyRecipes />} />
+        <Route path="/myrecipes/:recipeId"  element={<Recipe />} />
         <Route path="/search" element={<Search />} />
       </Routes>
     </div>

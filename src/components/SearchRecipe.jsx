@@ -6,28 +6,28 @@ function SearchRecipe({meal}) {
         <div>
             <h1>{meal.strMeal}</h1>
             <img src={meal.strMealThumb} />
-            {/* <ul>
-                <li>{seaRecipe.strMeasure1} {seaRecipe.strIngredient1}</li>
-                <li>{seaRecipe.strMeasure2} {seaRecipe.strIngredient2}</li>
-                <li>{seaRecipe.strMeasure3} {seaRecipe.strIngredient3}</li>
-                <li>{seaRecipe.strMeasure4} {seaRecipe.strIngredient4}</li>
-                <li>{seaRecipe.strMeasure5} {seaRecipe.strIngredient5}</li>
-                <li>{seaRecipe.strMeasure6} {seaRecipe.strIngredient6}</li>
-                <li>{seaRecipe.strMeasure7} {seaRecipe.strIngredient7}</li>
-                <li>{seaRecipe.strMeasure8} {seaRecipe.strIngredient8}</li>
-                <li>{seaRecipe.strMeasure9} {seaRecipe.strIngredient9}</li>
-                <li>{seaRecipe.strMeasure10} {seaRecipe.strIngredient10}</li>
-                <li>{seaRecipe.strMeasure11} {seaRecipe.strIngredient11}</li>
-                <li>{seaRecipe.strMeasure12} {seaRecipe.strIngredient12}</li>
-                <li>{seaRecipe.strMeasure13} {seaRecipe.strIngredient13}</li>
-                <li>{seaRecipe.strMeasure14} {seaRecipe.strIngredient14}</li>
-                <li>{seaRecipe.strMeasure15} {seaRecipe.strIngredient15}</li>
-                <li>{seaRecipe.strMeasure16} {seaRecipe.strIngredient16}</li>
-                <li>{seaRecipe.strMeasure17} {seaRecipe.strIngredient17}</li>
-                <li>{seaRecipe.strMeasure18} {seaRecipe.strIngredient18}</li>
-                <li>{seaRecipe.strMeasure19} {seaRecipe.strIngredient19}</li>
-                <li>{seaRecipe.strMeasure20} {seaRecipe.strIngredient20}</li>
-            </ul> */}
+            <ul>
+                <li>{meal.strMeasure1} {meal.strIngredient1}</li>
+                <li>{meal.strMeasure2} {meal.strIngredient2}</li>
+                <li>{meal.strMeasure3} {meal.strIngredient3}</li>
+                <li>{meal.strMeasure4} {meal.strIngredient4}</li>
+                <li>{meal.strMeasure5} {meal.strIngredient5}</li>
+                <li>{meal.strMeasure6} {meal.strIngredient6}</li>
+                <li>{meal.strMeasure7} {meal.strIngredient7}</li>
+                <li>{meal.strMeasure8} {meal.strIngredient8}</li>
+                <li>{meal.strMeasure9} {meal.strIngredient9}</li>
+                <li>{meal.strMeasure10} {meal.strIngredient10}</li>
+                <li>{meal.strMeasure11} {meal.strIngredient11}</li>
+                <li>{meal.strMeasure12} {meal.strIngredient12}</li>
+                <li>{meal.strMeasure13} {meal.strIngredient13}</li>
+                <li>{meal.strMeasure14} {meal.strIngredient14}</li>
+                <li>{meal.strMeasure15} {meal.strIngredient15}</li>
+                <li>{meal.strMeasure16} {meal.strIngredient16}</li>
+                <li>{meal.strMeasure17} {meal.strIngredient17}</li>
+                <li>{meal.strMeasure18} {meal.strIngredient18}</li>
+                <li>{meal.strMeasure19} {meal.strIngredient19}</li>
+                <li>{meal.strMeasure20} {meal.strIngredient20}</li>
+            </ul>
             <p>{meal.strInstructions}</p>
 
             <div>
