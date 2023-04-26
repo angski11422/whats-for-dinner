@@ -1,15 +1,12 @@
 import React from 'react';
 
-function SearchRecipe({searchRecipe}) {
-
-    const seaRecipe = searchRecipe.meals[1]
+function SearchRecipe({meal}) {
 
     return (
         <div>
-            <h1>{seaRecipe.strMeal}</h1>
-            <img src={seaRecipe.strMealThumb} />
-            <ul>
-                {/*for loop instead of each list*/}
+            <h1>{meal.strMeal}</h1>
+            <img src={meal.strMealThumb} />
+            {/* <ul>
                 <li>{seaRecipe.strMeasure1} {seaRecipe.strIngredient1}</li>
                 <li>{seaRecipe.strMeasure2} {seaRecipe.strIngredient2}</li>
                 <li>{seaRecipe.strMeasure3} {seaRecipe.strIngredient3}</li>
@@ -30,8 +27,8 @@ function SearchRecipe({searchRecipe}) {
                 <li>{seaRecipe.strMeasure18} {seaRecipe.strIngredient18}</li>
                 <li>{seaRecipe.strMeasure19} {seaRecipe.strIngredient19}</li>
                 <li>{seaRecipe.strMeasure20} {seaRecipe.strIngredient20}</li>
-            </ul>
-            <p>{seaRecipe.strInstructions}</p>
+            </ul> */}
+            <p>{meal.strInstructions}</p>
 
             <div>
                 <button>Add to Favorites</button>
