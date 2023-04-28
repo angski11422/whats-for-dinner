@@ -38,10 +38,12 @@ function RecipeForm({onAddRecipe}) {
     return (
         <div className="bg-rose-300">
             <h3 className="font-bold text-2xl">Add a Recipe</h3>
-            <form onSubmit={handleSubmit}>
-                <label>
+            <form onSubmit={handleSubmit} className='rounded px-8 pt-6 pb-8 mb-4'>
+                <label className="px-4 py-10">
                     Dish:
+                    <br></br>
                     <input 
+                        className="px-10"
                         type="text"
                         name="strMeal"
                         value={formData.strMeal}
@@ -49,9 +51,10 @@ function RecipeForm({onAddRecipe}) {
                     />
                 </label>
                 <br></br>
-                <label>
+                <label className="px-4 py-10">
                     Image:
                     <input 
+                        className="px-10 "
                         type="text"
                         name="strMealThumb"
                         value={formData.strMealThumb}
@@ -65,9 +68,10 @@ function RecipeForm({onAddRecipe}) {
                     /> */}
                 </label>
                 <br></br>
-                <label>
+                <label className="px-4 py-10">
                     Directions:
                     <textarea
+                        className="px-10 py-10"
                         rows={10}
                         name="strInstructions"
                         value={formData.strInstructions}
@@ -75,9 +79,11 @@ function RecipeForm({onAddRecipe}) {
                     />
                 </label>
                 <br></br>
-                <label>
+                <label className="px-4 py-10">
                     Cuisine:
+                    <br></br>
                     <select 
+                        className="px-10"
                         onChange={handleChange} 
                         name="strArea"
                         value={formData.strArea}
@@ -90,9 +96,11 @@ function RecipeForm({onAddRecipe}) {
                     </select>
                 </label>
                 <br></br>
-                <label>
+                <label className="px-4 py-10">
                     Type:
+                    <br></br>
                     <select 
+                        className="px-10"
                         onChange={handleChange} 
                         name="strCategory"
                         value={formData.strCategory}
@@ -105,9 +113,10 @@ function RecipeForm({onAddRecipe}) {
                     </select>
                 </label>
                 <br></br>
-                <label>
+                <label className="px-4 py-10">
                     Ingredients:
                     <textarea
+                        className="px-10 py-10"
                         rows={10}
                         name="strIngredient1"
                         value={formData.strIngredient1}
