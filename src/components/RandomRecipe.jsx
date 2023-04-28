@@ -28,17 +28,6 @@ function RandomRecipe({randomRecipe}) {
                 <li>{ranRecipe.strMeasure7} {ranRecipe.strIngredient7}</li>
                 <li>{ranRecipe.strMeasure8} {ranRecipe.strIngredient8}</li>
                 <li>{ranRecipe.strMeasure9} {ranRecipe.strIngredient9}</li>
-                <li>{ranRecipe.strMeasure10} {ranRecipe.strIngredient10}</li>
-                <li>{ranRecipe.strMeasure11} {ranRecipe.strIngredient11}</li>
-                <li>{ranRecipe.strMeasure12} {ranRecipe.strIngredient12}</li>
-                <li>{ranRecipe.strMeasure13} {ranRecipe.strIngredient13}</li>
-                <li>{ranRecipe.strMeasure14} {ranRecipe.strIngredient14}</li>
-                <li>{ranRecipe.strMeasure15} {ranRecipe.strIngredient15}</li>
-                <li>{ranRecipe.strMeasure16} {ranRecipe.strIngredient16}</li>
-                <li>{ranRecipe.strMeasure17} {ranRecipe.strIngredient17}</li>
-                <li>{ranRecipe.strMeasure18} {ranRecipe.strIngredient18}</li>
-                <li>{ranRecipe.strMeasure19} {ranRecipe.strIngredient19}</li>
-                <li>{ranRecipe.strMeasure20} {ranRecipe.strIngredient20}</li>
             </ul>
             <p><b>Directions:</b> {ranRecipe.strInstructions}</p>
             <div>
