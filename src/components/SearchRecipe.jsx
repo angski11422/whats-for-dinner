@@ -3,9 +3,12 @@ import React from 'react';
 function SearchRecipe({meal}) {
 
     return (
-        <div className="bg-orange-500">
+        <div className="bg-orange-500 container m-auto grid grid-cols-3 gap-4 border-slate-800 border-4 place-content-center justify-center align-top">
             <h1>{meal.strMeal}</h1>
             <img src={meal.strMealThumb} />
+            <div>
+                <button className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Add to Favorites</button>
+            </div>
             <ul>
                 <li>{meal.strMeasure1} {meal.strIngredient1}</li>
                 <li>{meal.strMeasure2} {meal.strIngredient2}</li>
@@ -30,9 +33,7 @@ function SearchRecipe({meal}) {
             </ul>
             <p>{meal.strInstructions}</p>
 
-            <div>
-                <button className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Add to Favorites</button>
-            </div>
+            
         </div>
     );
 }

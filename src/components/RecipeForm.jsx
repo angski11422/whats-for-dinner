@@ -39,7 +39,7 @@ function RecipeForm({onAddRecipe}) {
         <div className="bg-red-600">
             <h3 className="font-bold text-2xl">Add a Recipe</h3>
             <form onSubmit={handleSubmit}>
-                <label>
+                <label className="space-y-1">
                     Dish:
                     <input 
                         type="text"
@@ -48,18 +48,24 @@ function RecipeForm({onAddRecipe}) {
                         onChange={handleChange}
                     />
                 </label>
-                <br></br>
-                <label>
+                <br className="space-y-1"></br>
+                <label className="space-y-1">
                     Image:
                     <input 
-                        type="file"
+                        type="text"
                         name="strMealThumb"
                         value={formData.strMealThumb}
                         onChange={handleChange} 
                     />
+                    {/* <input 
+                        type="file"
+                        name="strMealThumb"
+                        value={formData.strMealThumb}
+                        onChange={handleChange} 
+                    /> */}
                 </label>
                 <br></br>
-                <label>
+                <label className="p-4">
                     Directions:
                     <textarea
                         rows={10}
@@ -69,35 +75,37 @@ function RecipeForm({onAddRecipe}) {
                     />
                 </label>
                 <br></br>
-                <label>
+                <label className="p-4">
                     Cuisine:
                     <select 
                         onChange={handleChange} 
                         name="strArea"
                         value={formData.strArea}
                     >
-                        <option value="other">Other</option>
+                        <option value="">Choose One</option>
                         <option value="italian">Italian</option>
                         <option value="indian">Indian</option>
                         <option value="vegetarian">Vegetarian</option>
+                        <option value="other">Other</option>
                     </select>
                 </label>
                 <br></br>
-                <label>
+                <label className="p-4">
                     Type:
                     <select 
                         onChange={handleChange} 
                         name="strCategory"
                         value={formData.strCategory}
                     >
-                        <option value="other">Other</option>
-                        <option value="pasta">Pasta</option>
-                        <option value="appetizer">Appetizer</option>
+                        <option value="">Choose One</option>
                         <option value="breakfast">Breakfast</option>
+                        <option value="pasta">Dinner</option>
+                        <option value="appetizer">Appetizer</option>
+                        <option value="other">Other</option>
                     </select>
                 </label>
                 <br></br>
-                <label>
+                <label className="p-4">
                     Ingredients:
                     <textarea
                         rows={10}

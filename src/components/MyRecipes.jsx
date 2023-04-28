@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import RecipeList from './RecipeList'
-import { Link } from 'react-router-dom'
+import RecipeForm from './RecipeForm';
 
 function MyRecipes() {
     const [recipes, setRecipes] = useState([])
+    const [showForm, setShowForm] = useState(false)
 
     useEffect(() => {
         fetch('http://localhost:3000/recipes')
@@ -12,7 +13,7 @@ function MyRecipes() {
     }, [])
 
     const recipeList = recipes.map((recipe) =>
-        <RecipeList key={recipe.idMeal} recipe={recipe} /> 
+        <RecipeList key={recipe.id} recipe={recipe} /> 
     )
 
     function addNewRecipe(newRecipe) {
@@ -20,13 +21,25 @@ function MyRecipes() {
         setRecipes(updatedRecipes)
     }
 
+    function showRecipeForm() {
+        setShowForm(!showForm)
+    }
+
     return (
-        <div className="bg-amber-300">
+        <div className="bg-amber-300 container m-auto grid grid-cols-3 gap-4">
             <aside>
-                <h1>My Recipes List</h1>  
+                <h1 className="text-xl font-bold">My Recipes List</h1>  
                 {recipeList}
-                <Link className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" to={{pathname: './recipeform', data: {onAddRecipe: {addNewRecipe}}}}>Add New Recipe</Link> 
+                <button className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" onClick={showRecipeForm}>Add New Recipe</button> 
             </aside>
+            <main>
+                {showForm ? (
+                    <div>
+                        <RecipeForm onAddRecipe={addNewRecipe}/>
+                    </div>
+                ) : null}
+                
+            </main>
         </div>
     );
 }

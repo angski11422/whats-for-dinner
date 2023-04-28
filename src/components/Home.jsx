@@ -5,7 +5,7 @@ function Home() {
     const [randomRecipe, setRandomRecipe] = useState(null)
 
     useEffect(() => {
-        fetch("http://www.themealdb.com/api/json/v1/1/random.php")
+        fetch("http://www.themealdb.com/api/json/v1/1/random.php/https://cors-anywhere.herokuapp.com/corsdemo")
         .then((resp) => resp.json())
         .then(data => setRandomRecipe(data))
     }, [])
@@ -15,7 +15,7 @@ function Home() {
     }
 
     return (
-        <div className="bg-sky-500">
+        <div className="bg-sky-500 container m-auto grid grid-cols-3 gap-4">
             <RandomRecipe randomRecipe={randomRecipe}/>
         </div>
     );

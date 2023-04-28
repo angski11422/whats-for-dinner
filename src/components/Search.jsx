@@ -25,8 +25,8 @@ function Search() {
 
 
     return (
-        <div className="bg-neutral-600">
-            <div>
+        <div className="bg-neutral-600 justify-center">
+            <div className="">
                 <input 
                     type="text" 
                     placeholder="Search anything..."
