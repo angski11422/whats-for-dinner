@@ -36,10 +36,10 @@ function RecipeForm({onAddRecipe}) {
       }
    
     return (
-        <div className="bg-red-600">
+        <div className="bg-rose-300">
             <h3 className="font-bold text-2xl">Add a Recipe</h3>
             <form onSubmit={handleSubmit}>
-                <label className="space-y-1">
+                <label>
                     Dish:
                     <input 
                         type="text"
@@ -48,8 +48,8 @@ function RecipeForm({onAddRecipe}) {
                         onChange={handleChange}
                     />
                 </label>
-                <br className="space-y-1"></br>
-                <label className="space-y-1">
+                <br></br>
+                <label>
                     Image:
                     <input 
                         type="text"
@@ -65,7 +65,7 @@ function RecipeForm({onAddRecipe}) {
                     /> */}
                 </label>
                 <br></br>
-                <label className="p-4">
+                <label>
                     Directions:
                     <textarea
                         rows={10}
@@ -75,7 +75,7 @@ function RecipeForm({onAddRecipe}) {
                     />
                 </label>
                 <br></br>
-                <label className="p-4">
+                <label>
                     Cuisine:
                     <select 
                         onChange={handleChange} 
@@ -90,7 +90,7 @@ function RecipeForm({onAddRecipe}) {
                     </select>
                 </label>
                 <br></br>
-                <label className="p-4">
+                <label>
                     Type:
                     <select 
                         onChange={handleChange} 
@@ -105,7 +105,7 @@ function RecipeForm({onAddRecipe}) {
                     </select>
                 </label>
                 <br></br>
-                <label className="p-4">
+                <label>
                     Ingredients:
                     <textarea
                         rows={10}

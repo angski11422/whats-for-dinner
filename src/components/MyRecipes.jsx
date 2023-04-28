@@ -26,7 +26,7 @@ function MyRecipes() {
     }
 
     return (
-        <div className="bg-amber-300 container m-auto grid grid-cols-3 gap-4">
+        <div className="bg-neutral-600 container m-auto grid grid-cols-3 gap-4">
             <aside>
                 <h1 className="text-xl font-bold">My Recipes List</h1>  
                 {recipeList}

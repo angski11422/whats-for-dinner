@@ -15,7 +15,7 @@ function Home() {
     }
 
     return (
-        <div className="bg-sky-500 container m-auto grid grid-cols-3 gap-4">
+        <div className="bg-neutral-600 container m-auto grid grid-cols-1 gap-4">
             <RandomRecipe randomRecipe={randomRecipe}/>
         </div>
     );

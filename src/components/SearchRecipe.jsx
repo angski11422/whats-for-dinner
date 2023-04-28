@@ -3,8 +3,8 @@ import React from 'react';
 function SearchRecipe({meal}) {
 
     return (
-        <div className="bg-orange-500 container m-auto grid grid-cols-3 gap-4 border-slate-800 border-4 place-content-center justify-center align-top">
-            <h1>{meal.strMeal}</h1>
+        <div className=" bg-rose-300 container m-auto grid grid-cols-3 gap-4 border-slate-800 border-4 place-content-center justify-center align-top p-4">
+            <h1 className="font-bold text-xl">{meal.strMeal}</h1>
             <img src={meal.strMealThumb} />
             <div>
                 <button className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Add to Favorites</button>

@@ -9,8 +9,8 @@ function RecipeList({recipe}) {
     }
 
     return (
-        <div onClick={handleShowDetails} className="bg-rose-950">
-            <h6>{recipe.strMeal}</h6>
+        <div onClick={handleShowDetails}>
+            <h6 className="font-semibold">{recipe.strMeal}</h6>
             {isClicked ? (
             <div>
                 <Recipe recipe={recipe}/>

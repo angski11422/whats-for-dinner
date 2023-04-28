@@ -9,7 +9,7 @@ function RandomRecipe({randomRecipe}) {
     }
 
     return (
-        <div className="bg-green-400">
+        <div className="bg-rose-300 container m-auto grid grid-cols-1 gap-4 border-slate-800 border-4 place-content-center justify-center align-top">
             <img 
                 src={ranRecipe.strMealThumb} 
                 alt={ranRecipe.strMeal}

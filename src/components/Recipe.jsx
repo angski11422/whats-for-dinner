@@ -5,7 +5,7 @@ function Recipe({recipe}) {
     
 
     return (
-        <main className="bg-pink-400">
+        <main className="bg-rose-300">
             <img src={recipe.strMealThumb} alt="Error Loading..."/>
             <p>{recipe.strArea}</p>  
             <ul>
