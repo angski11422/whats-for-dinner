@@ -3,7 +3,7 @@ import React from 'react';
 function SearchRecipe({meal}) {
 
     return (
-        <div>
+        <div className="bg-orange-500">
             <h1>{meal.strMeal}</h1>
             <img src={meal.strMealThumb} />
             <ul>

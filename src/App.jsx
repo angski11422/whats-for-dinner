@@ -11,7 +11,7 @@ import RecipeForm from './components/RecipeForm';
 
 function App() {
   return (
-    <div className="bg-gray-400">
+    <div>
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />

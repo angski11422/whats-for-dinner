@@ -9,15 +9,16 @@ function RandomRecipe({randomRecipe}) {
     }
 
     return (
-        <div>
+        <div className="bg-green-400">
             <img 
                 src={ranRecipe.strMealThumb} 
                 alt={ranRecipe.strMeal}
                 onClick={handleViewVideo}
+                className="max-w-xs max-h-xs p-5"
             />
-            <h1 className="font-bold">{ranRecipe.strMeal}</h1>
+            <h1 className="font-bold p-3">{ranRecipe.strMeal}</h1>
             
-            <ul className="marker:text-white text-black list-inside list-disc">
+            <ul className="marker:text-white text-black list-inside list-disc"><b>Ingredients:</b>
                 <li>{ranRecipe.strMeasure1} {ranRecipe.strIngredient1}</li>
                 <li>{ranRecipe.strMeasure2} {ranRecipe.strIngredient2}</li>
                 <li>{ranRecipe.strMeasure3} {ranRecipe.strIngredient3}</li>

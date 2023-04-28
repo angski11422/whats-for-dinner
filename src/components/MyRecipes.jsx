@@ -15,16 +15,18 @@ function MyRecipes() {
         <RecipeList key={recipe.idMeal} recipe={recipe} /> 
     )
 
+    function addNewRecipe(newRecipe) {
+        const updatedRecipes = [recipes, newRecipe]
+        setRecipes(updatedRecipes)
+    }
 
     return (
-        <div>
-            <h1>My Recipes List</h1>  
-            <div>
+        <div className="bg-amber-300">
+            <aside>
+                <h1>My Recipes List</h1>  
                 {recipeList}
-                <div>
-                    <Link className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" to={'./recipeform'}>Add New Recipe</Link>
-                </div>
-            </div>
+                <Link className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" to={{pathname: './recipeform', data: {onAddRecipe: {addNewRecipe}}}}>Add New Recipe</Link> 
+            </aside>
         </div>
     );
 }

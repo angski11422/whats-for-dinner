@@ -25,7 +25,7 @@ function Search() {
 
 
     return (
-        <div>
+        <div className="bg-neutral-600">
             <div>
                 <input 
                     type="text" 

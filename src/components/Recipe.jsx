@@ -1,15 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
-function Recipe() {
-    const {recipeId} = useParams();
 
+function Recipe({recipe}) {
+    
 
     return (
-        <div>
-            <h3>Recipe Details</h3>
-            <h4>{recipeId.strMeal}</h4>
-        </div>
+        <main className="bg-pink-400">
+            <img src={recipe.strMealThumb} alt="Error Loading..."/>
+            <p>{recipe.strArea}</p>  
+            <ul>
+                <li>{recipe.strMeasure1} {recipe.strIngredient1}</li>
+            </ul>
+            <p>{recipe.strInstructions}</p>
+        </main>
     );
 }
 
