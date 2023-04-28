@@ -9,7 +9,7 @@ function RecipeList({recipe}) {
     }
 
     return (
-        <div onClick={handleShowDetails}>
+        <div onClick={handleShowDetails} className="text-white" >
             <h6 className="font-semibold">{recipe.strMeal}</h6>
             {isClicked ? (
             <div>

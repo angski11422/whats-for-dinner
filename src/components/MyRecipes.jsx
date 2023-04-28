@@ -28,7 +28,7 @@ function MyRecipes() {
     return (
         <div className="bg-neutral-600 container m-auto grid grid-cols-3 gap-4">
             <aside>
-                <h1 className="text-xl font-bold">My Recipes List</h1>  
+                <h1 className="text-2xl text-white font-bold">My Recipes List</h1>  
                 {recipeList}
                 <button className="px-4 py-1 text-sm text-indigo-700 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" onClick={showRecipeForm}>Add New Recipe</button> 
             </aside>
